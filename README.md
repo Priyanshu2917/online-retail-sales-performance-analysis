@@ -72,7 +72,7 @@ This workflow is intentionally reproducible: source download, transformation, re
 
 The project uses the [UCI Online Retail II dataset](https://archive.ics.uci.edu/dataset/502/online+retail+ii), an anonymized transaction dataset for a UK-based non-store retailer. It covers transactions from December 2009 to December 2011 and is published by UCI under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-The source workbook is intentionally not committed because of its size. Download it reproducibly with [src/download_data.py](src/download_data.py).
+The original source workbook is included unchanged at [data/raw/online_retail_II.xlsx](data/raw/online_retail_II.xlsx) with UCI attribution. It is 43.51 MB, which remains within GitHub's regular file-size limit. To refresh the source reproducibly, use [src/download_data.py](src/download_data.py).
 
 ### Commercial fact-table definition
 
@@ -156,7 +156,7 @@ Run the scripts against the generated **data/processed/online_retail_analysis.sq
 ~~~text
 retail-sales-performance-analysis/
 ├── data/
-│   ├── raw/                          # Source workbook is downloaded here
+│   ├── raw/                          # Original UCI source workbook and attribution
 │   └── processed/                    # Generated facts, summaries, checks, and SQLite DB
 ├── docs/
 │   ├── business_problem.md
@@ -183,7 +183,7 @@ retail-sales-performance-analysis/
 ### Prerequisites
 
 - Python 3.10 or later
-- Internet access to download the documented UCI source workbook
+- Internet access only if you want to re-download the documented UCI source workbook
 - Optional: a SQLite client for running the SQL scripts
 - Optional: Microsoft Excel or a compatible desktop spreadsheet application
 
@@ -197,6 +197,7 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 
+# Optional: refresh the source workbook from UCI
 python src/download_data.py
 python src/analysis.py
 ~~~

@@ -1,7 +1,6 @@
 __pycache__/
 *.pyc
 .venv/
-data/raw/online_retail_II.xlsx
 data/processed/*.csv
 data/processed/*.sqlite
 images/*.png

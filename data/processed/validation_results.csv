@@ -1,0 +1,9 @@
+check,passed,definition,status
+No cancelled sales in fact table,True,Completed-sales fact table excludes cancellation invoices.,PASS
+All quantities are positive,True,Fact table has no returns or zero quantities.,PASS
+All unit prices are positive,True,Fact table has no zero-price or negative-price lines.,PASS
+Monthly revenue reconciles,True,Monthly totals equal fact-table revenue.,PASS
+Country revenue reconciles,True,Country totals equal fact-table revenue.,PASS
+Merchandise product revenue reconciles,True,Product totals reconcile to tagged merchandise only.,PASS
+Customer segment revenue reconciles,True,Segment totals equal known-customer revenue.,PASS
+Order keys are populated,True,Every fact row maps to an order identifier.,PASS

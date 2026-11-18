@@ -1,0 +1,11 @@
+metric,value,definition
+Raw source rows,1067371,All rows loaded from both supplied source sheets.
+Exact duplicate rows removed,34335,Duplicate definition excludes source sheet name.
+Rows after duplicate removal,1033036,Population evaluated by the cleaning rules.
+Cancellation rows excluded,19104,Invoice number begins with C. Counts can overlap other exclusion flags.
+Missing invoice rows excluded,0,A completed order needs an invoice identifier.
+Missing/invalid date rows excluded,0,A dated transaction is required for trend analysis.
+Non-positive quantity rows excluded,22496,Returns and zero-quantity rows are not positive sales.
+Non-positive price rows excluded,6019,Free or adjustment rows are outside sales revenue.
+Positive completed sales rows,1007913,Clean fact-table population used for all commercial KPIs.
+Rows without customer ID retained,228488,Retained for revenue and orders; excluded from customer-level metrics.

@@ -1,0 +1,12 @@
+{
+  "Total revenue": 20476260.448,
+  "Orders": 40077,
+  "Average order value": 510.92298445492423,
+  "Units sold": "11205148",
+  "Known customers": 5878,
+  "Date range start": "2009-12-01",
+  "Date range end": "2011-12-09",
+  "source_file": "online_retail_II.xlsx",
+  "clean_sales_rows": 1007913,
+  "recommendation_count": 4
+}

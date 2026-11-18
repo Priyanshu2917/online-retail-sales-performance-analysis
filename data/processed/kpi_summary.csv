@@ -1,0 +1,8 @@
+metric,value,definition
+Total revenue,20476260.448,Sum of positive completed sales line amounts.
+Orders,40077,Distinct source-sheet invoice keys in the clean fact table.
+Average order value,510.92298445492423,Total revenue divided by distinct orders.
+Units sold,11205148,Sum of positive item quantities.
+Known customers,5878,Customers with a usable source customer ID.
+Date range start,2009-12-01,First included transaction date.
+Date range end,2011-12-09,Last included transaction date.

@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+data/raw/online_retail_II.xlsx
+data/processed/*.csv
+data/processed/*.sqlite
+images/*.png
+!data/processed/data_quality_report.csv
+!data/processed/dashboard_recommendations.csv
+!data/processed/kpi_summary.csv
+!data/processed/source_load_log.csv
+!data/processed/validation_results.csv
+!data/processed/summary_metrics.json
+!excel/Online_Retail_Analysis.xlsx
